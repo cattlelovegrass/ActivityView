@@ -2,6 +2,7 @@ import SwiftUI
 import LinkPresentation
 import CoreServices
 
+@available(iOS 13.0, *)
 public extension View {
 
     /// Presents an activity sheet when the associated `ActivityItem` is present
@@ -17,6 +18,7 @@ public extension View {
 
 }
 
+@available(iOS 13.0, *)
 private struct ActivityView: UIViewControllerRepresentable {
 
     @Binding var item: ActivityItem?
@@ -41,6 +43,7 @@ private struct ActivityView: UIViewControllerRepresentable {
 
 }
 
+@available(iOS 13.0, *)
 private final class ActivityViewControllerWrapper: UIViewController {
 
     var item: Binding<ActivityItem?>
