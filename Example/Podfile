@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ActivityView_Tests' do
+  pod 'ActivityView', :path => '../'
+  
+  
+end
